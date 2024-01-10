@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haukai Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Вставьте это в <head> вашего HTML файла -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <img src="logo.png" alt="Haukai Restaurant Logo">
+        <div class="language-select">
+            <label for="languages">Language:</label>
+            <select name="languages" id="languages">
+                <option value="en">English</option>
+                <option value="ma">Maori</option>
+                <!-- Add other language options here -->
+            </select>
+        </div>
+    </div>
+</header>
+<nav class="navigation-menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservation.html">Reservations</a></li>
+        <li><a href="extras.html">Extras</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <div class="about_us">
+        <form id="about_us-form" action="/submit-form" method="post">
+    
+        <h2>About Haukai Restaurant</h2>
+        
+        <p>Nestled in the picturesque Bay of Islands, Haukai Restaurant is a culinary gem specializing in traditional Māori cuisine. Founded by a passionate couple dedicated to crafting an authentic dining experience, we cater to both locals and visitors seeking to savor the region's flavors. Our team, though small, operates with full-time devotion, opening doors for dinner from Wednesday to Sunday.</p>
+
+        <p>Our dinner menu boasts a selection of Māori and Pākeha dishes, paired with a variety of beverages to complete your meal. We're not just about food; we aim to immerse our guests in Te Ao Māori, from blessings over the kai to other cultural elements we've woven into the fabric of your dining experience.</p>
+        
+        <p>Aspiring to connect more deeply with our patrons, we're excited to introduce an interactive web application to enhance your engagement with us. Our online presence is not only a window to our world but also a convenient way for you to make reservations, helping us streamline our services and focus more on what we love – bringing you exceptional culinary experiences that celebrate our heritage.</p>
+        
+        <p>Join us at Haukai, where every dish is a story of tradition and every visit is an exploration of culture.
+        </p>
+        </form>
+    </div>
+
+    <section class="buttons">
+        <a href="menu.html" class="button">Menu</a>
+    </section>
+
+</main>
+<footer>
+    <div class="social-media">
+        <!-- Add social media links here -->
+        <a href="https://facebook.com"><img src="fb.png" alt="Facebook"></a>
+        <a href="https://instagram.com"><img src="instagram.png" alt="Instagram"></a>
+        <a href="https://twitter.com"><img src="twitter.jpg" alt="Twitter"></a>
+        <a href="https://telegram.com"><img src="telegram.png" alt="Telegram"></a>
+        <a href="https://whatsapp.com"><img src="W.jpg" alt="WhatsApp"></a>
+        <a href="https://youtube.com"><img src="youtube.png" alt="YouTube"></a>
+    </div>
+    <div class="newsletter">
+        <p>Sign up for News & latest Promotions</p>
+        <form action="subscribe">
+            <input type="email" placeholder="Your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+    <div class="copyright">
+        <p>© 2023 - All rights reserved</p>
+    </div>
+</footer>
+</body>
+</html>
