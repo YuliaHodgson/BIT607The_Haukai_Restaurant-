@@ -2,13 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Welcome to Haukai Restaurant - your destination for authentic Māori cuisine in the heart of the Bay of Islands. Discover affordability, freshness, and authenticity in every aspect of your dining experience. No questions, just relaxation awaits at Haukai.">
-    <title>Home - Haukai Restaurant</title>
+    <meta name="description" content="Exclusive access for the Haukai Restaurant staff. Enter the password to access information and resources specifically designed for our team.">
+    <title>Staff Area</title>
     <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        function checkPasswordAndRedirect() {
+            var password = document.getElementById("password").value;
+            if (password == "!1<2>3+@=BIT607") {
+                window.location.href = "staff_area.html"; // Перенаправление на staff_area.html
+            } else {
+                alert("Incorrect password");
+            }
+            return false; // Предотвращаем отправку формы
+        }
+    </script>
 </head>
 <body>
 <header>
@@ -35,25 +45,21 @@
     </ul>
 </nav>
 <main>
-    <section class="home">
-        <div class="welcome-message">
-            <h1>Welcome Nau mai</h1>
-            <h2>The Haukai Restaurant</h2>
-            <p>Authentic Māori cuisine</p>
-       
-            <h3>No questions, just relax...</h3>
-            <h3>Affordable, fresh, and authentic</h3>
-            <h3>Step into the heart of the Bay of Islands and embark on a culinary journey like no other at Haukai Restaurant. Our warm and welcoming establishment is more than just a place to dine; it's an immersive experience that blends affordability, freshness, and authenticity into every aspect of your visit.</h3>
-        </div>
+    <section class="login-form">
+        <h1>Welcome to the Staff Area</h1>
+        <p>Please enter the password to access staff information.</p>
+        <form onsubmit="return checkPasswordAndRedirect()">
+            <input type="password" id="password" placeholder="Enter Password">
+            <button type="submit">Login</button>
+        </form>
     </section>
-
-    <section class="buttons">
-        <a href="about_us.html" class="button">About Us</a>
-    </section>
-
 </main>
+<section class="buttons">
+    <a href="index.html" class="button">Home</a>
+</section>
 <footer>
     <div class="social-media">
+        <!-- Add social media links here -->
         <a href="https://facebook.com"><img src="fb.png" alt="Facebook"></a>
         <a href="https://instagram.com"><img src="instagram.png" alt="Instagram"></a>
         <a href="https://twitter.com"><img src="twitter.jpg" alt="Twitter"></a>

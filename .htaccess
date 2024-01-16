@@ -1,0 +1,5 @@
+AuthName "Restricted Area. Secure directory"
+AuthType Basic
+AuthUserFile C:/Users/Yulia/Server_Apache/Apache24/htdocs/.htpasswd
+Require valid-user
+
